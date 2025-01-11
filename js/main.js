@@ -42,11 +42,6 @@ const stores = [
 
 const cardsContainer = document.getElementById("store-cards");
 
-function makeCall(phoneNumber) {
-    const sanitizedPhone = phoneNumber.replace(/[^+\d]/g, '');
-    window.open = `tel:${sanitizedPhone}`;
-}
-
 stores.forEach(store => {
     const card = document.createElement("div");
     card.className = "card";
@@ -67,29 +62,29 @@ stores.forEach(store => {
     cardBack.innerHTML = `
     <h3>Social Media</h3
     <div class="social-media">
-        <div class="clickable-card" onclick="window.open('${store.facebook}', '_blank');">
+        <a class="clickable-card" href="${store.facebook}" target="_blank">
             <img src="imgs/social-media/fb.png" class="button-icon"/>
             <p class="button-text">${store.facebookName}</p>
-        </div>
-        <div class="clickable-card" onclick="window.open('${store.instagram}', '_blank');">
+        </a>
+        <a class="clickable-card" href="${store.instagram}" target="_blank">
             <img src="imgs/social-media/ig.png" class="button-icon"/>
             <p class="button-text">${store.instagramName}</p>
-        </div>
-        ${store.tiktok ? `<div class="clickable-card" onclick="window.open('${store.tiktok}', '_blank');">
+        </a>
+        ${store.tiktok ? `<a class="clickable-card" href="${store.tiktok}" target="_blank">
             <img src="imgs/social-media/tiktok.png" class="button-icon"/>
             <p class="button-text">${store.tiktokName}</p>
-            </div>` : ""}
+            </a>` : ""}
     </div>
     <h3>Reach us</h3>
     <div class="contact">
-        <div class="clickable-card" onclick="window.open('${store.maps}', '_blank');">
+        <a class="clickable-card" href="${store.maps}" target="_blank">
             <img src="imgs/social-media/google-maps.png" class="button-icon"/>
             <p class="button-text">${store.address}</p>
-        </div>
-        <div class="clickable-card" onclick="makeCall('${store.phone}')">
+        </a>
+        <a class="clickable-card" href="tel:${store.phone.replace(/[^+\d]/g, '')}" target="_self">
             <img src="imgs/social-media/google-maps.png" class="button-icon"/>
             <p class="button-text">${store.phone}</p>
-        </div>
+        </a>
     </div>
     `;
 
