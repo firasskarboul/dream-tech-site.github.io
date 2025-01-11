@@ -60,7 +60,7 @@ stores.forEach(store => {
     const cardBack = document.createElement("div");
     cardBack.className = "card-back";
     cardBack.innerHTML = `
-    <h3>Social Media</h3
+    <h3>Social Media</h3>
     <div class="social-media">
         <a class="clickable-card" href="${store.facebook}" target="_blank">
             <img src="imgs/social-media/fb.png" class="button-icon"/>
@@ -82,7 +82,7 @@ stores.forEach(store => {
             <p class="button-text">${store.address}</p>
         </a>
         <a class="clickable-card" href="tel:${store.phone.replace(/[^+\d]/g, '')}" target="_self">
-            <img src="imgs/social-media/google-maps.png" class="button-icon"/>
+            <img src="imgs/social-media/phone.png" class="button-icon"/>
             <p class="button-text">${store.phone}</p>
         </a>
     </div>

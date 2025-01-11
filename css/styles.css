@@ -76,7 +76,7 @@ body {
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .card-front {
@@ -114,16 +114,32 @@ body {
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
-  padding: 0 10px;
+}
+
+.card-back h3 {
+  margin-left: 10px;
 }
 
 .card-back .social-media {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  height: 60%;
+}
+
+.button-text {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
 }
 
 .card-back .contact {
-  /* height: 40%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40%;
 }
 
 .clickable-card {
@@ -131,11 +147,12 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 0 12px;
-  border: 1px solid #000;
+  border: 1px solid #333;
   border-radius: 5px;
   height: 50px;
   border-radius: 10px;
   margin-bottom: 5px;
+  width: 85%;
 }
 
 .button-icon {
