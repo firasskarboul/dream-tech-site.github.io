@@ -51,7 +51,7 @@ body {
 
 .card {
   width: 350px;
-  height: 470px;
+  height: 500px;
   perspective: 1000px;
 }
 
@@ -125,7 +125,7 @@ body {
 }
 
 .card-back h3 {
-  margin: 6px 10px;
+  margin: 10px;
   font-size: 1.2rem;
 }
 
@@ -241,7 +241,7 @@ a {
 
   .card {
     width: 310px;
-    height: 452px;
+    height: 480px;
     perspective: 1000px;
   }
 
