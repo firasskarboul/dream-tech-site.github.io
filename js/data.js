@@ -23,7 +23,7 @@ const stores = [
         },
         {
             fullName: "Aymen Messaoudi",
-            role: "Sannou3",
+            role: "Technicien",
             photo: "aymen.jpg"
         }]
     },
@@ -34,8 +34,8 @@ const stores = [
         facebookName: "Dream Tech",
         instagram: "https://instagram.com/storeB",
         instagramName: "@dreamtechtn",
-        tiktok: "https://tiktok.com/@storeB",
-        tiktokName: "Dream Tech HLIF",
+        tiktok: "https://www.tiktok.com/@dreamtech.hlif",
+        tiktokName: "dreamtech.hlif",
         address: "Avenue 20 Mars, Hammam-Lif",
         phone: "+216 28 03 21 22",
         backgroundImage: "card-background.jpg",
@@ -52,8 +52,8 @@ const stores = [
         facebookName: "Dreamtech Mutu",
         instagram: "https://www.instagram.com/dreamtech.mv/",
         instagramName: "@dreamtech.mv",
-        tiktok: null,
-        tiktokName: null,
+        tiktok: "https://www.tiktok.com/@dreamtech.mv",
+        tiktokName: "dreamtech.mv",
         address: "30 Rue Harroun Errachid, Mutuelle Ville",
         phone: "+216 22 03 10 31",
         backgroundImage: "card-background.jpg",
